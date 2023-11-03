@@ -13,6 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Bio &amp; Contact | Florent Imbert</title>
+	<link rel="shortcut icon" href="assets/IF.jpg" type="image/x-icon">
+	
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Page perso Florent Imbert" />
+	<meta property="og:description" content="Ph.D student in Computer Science" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/FIorentI/Page-perso/main/assets/FI.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 </head>
 
 <body>
@@ -21,15 +29,14 @@
             <div>
                 <h1>Florent Imbert</h1>
                 <p>
-                    Mes couilles <br />
-                    Mon culs <br />
-                    La suite des events
+                    Ph.D student in Computer Science   <br />
+                    IRISA, Université de Rennes, INSA Rennes
                 </p>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="bio.html">
                             <i class="fa fa-at fa-2x"></i>
                             <p class="menu-text">Bio &amp; Contact</p>
                         </a>
@@ -47,12 +54,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="code_data.html">
-                            <i class="fa fa-code fa-2x"></i>
-                            <p class="menu-text">Code &amp; Data</p>
-                        </a>
-                    </li>
-                    <li>
                         <a href="teaching.html">
                             <i class="fa fa-graduation-cap fa-2x"></i>
                             <p class="menu-text">Teaching</p>
@@ -65,31 +66,38 @@
     <section class="">
         <article class="projet">
             <header>
-                <h2>Titre du projet</h2>
+                <h2 id="KIHT">KIHT: Kaligo-based Intelligent Handwriting Teacher</h2>
             </header>
             <div class="contenu">
-                <div class="image"><img src="assets/imgRef.jpg" alt="catcher plot">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cum neque, nobis at explicabo amet corporis unde eaque. Et, dolorum at dicta cum porro, reiciendis tenetur laboriosam molestias, reprehenderit quidem repellendus doloribus, numquam excepturi voluptatem delectus nulla temporibus facere voluptas?</p>
-                </div>
-                <h3>sous-titre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eligendi, asperiores aliquam voluptatibus eius provident minima facilis quidem accusantium tempora voluptate atque eum animi beatae possimus, facere tempore perspiciatis explicabo repellat quae eaque corporis magnam suscipit? Nisi sed atque iure obcaecati. Totam pariatur delectus a excepturi repellat veniam alias eius cupiditate ut neque laboriosam, odit dolores optio, autem voluptatem ab aliquid minus recusandae consectetur veritatis, ipsum doloribus culpa asperiores. Ducimus ipsum aliquid optio, maxime doloremque?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quasi hic laborum aliquid, necessitatibus voluptatibus est, tempora et. Voluptatem illum ea, fuga dolorem odio amet possimus at eveniet architecto in! Explicabo beatae eius ea, non dolores officia laboriosam a quis, corporis quae totam molestias autem!</p>
+				<div class="image"><img src="assets/KIHT.png" alt="KIHT project overview"> </div>
+					<p class='first'> KIHT project overview </p>
+                    <p> The <a href="https://www-intuidoc.irisa.fr/kiht-kaligo-based-intelligent-handwriting-teacher-french-german-bilateral-anr-research-project/">KIHT 
+					project </a> has the objective of creating an intelligent learning tool known as the "DigiPen," which is an electronic pen designed for digitized handwriting. STABILO, in collaboration with the German KIT institute, is responsible for developing the hardware of the electronic DigiPen. The KIT institute is focused on integrating artificial intelligence algorithms into the device.
+					The IRISA IntuiDoc team is in charge of designing and developing the deep learning AI system that can reconstruct online handwriting patterns from the data captured by the DigiPen's kinematic sensors, including accelerometers, gyroscopes, magnetometers, and force sensors.</p>
+					<br>
+					<p class='first'> My contribution as an IRISA member </p>
+                    <p> My work has focused mainly on the pre-processing chain for processing, synchronizing and labeling data (sensor and trajectory) to make it usable for deep neural network learning. 
+					<a href="https://www-intuidoc.irisa.fr/irisa-kiht-s-dataset/"> We collected a significant amount of data </a> using the latest generation Digipen. The pre-processing chain was finalized. It is based on automatic alignment between ground truth (trajectory captured on digital tablet) and DigiPen sensor data (kinematic sensor) using the Dynamic Time Warping (DTW) algorithm.
+					A neural network architecture based on Temporal Convolutional Networks (TCN) was designed and its hyperparameters optimized, and an evaluation based on Fréchet distance was implemented for optimum analysis of the results.</p>
+                
+				</div>
+                <h3>Related papers</h3>
+					<p class='first'> Article in an international peer-reviewed journal (+ presentation at ICDAR 2023 – Journal Track) </p>
+					<p> <a href="https://inria.hal.science/hal-04076399v2"> 
+					[1] Online handwriting trajectory reconstruction from kinematic sensors using temporal convolutional network. Wassim Swaileh, Florent Imbert, Yann Soullard, Romain Tavenard, Eric Anquetil, IJDAR (2023) </a> </p>
+
+					<p class='first'> Communication at the SIFED symposium in France without proceeding  </p>
+
+					<p> <a href="https://hal.science/hal-03895960"> 
+					[2] Toward Deep neural network for pen trajectory reconstruction from kinematic sensors, Florent Imbert, Eric Anquetil, Romain Tavenard, Yann Soullard, Wassim Swaileh, Symposium International Francophone sur l’Ecrit et le Document (SIFED’2022), Oct 2022, Rennes, France </a> </p>
+
+					<p class='first'> Conference poster at the SIFED symposium in France without proceeding </p>
+
+					<p> <a href="https://inria.hal.science/hal-04125711"> 
+					[3] Adaptation de domaine pour la reconstruction de la trajectoire du stylo à partir de capteurs cinématiques, Florent Imbert, Eric Anquetil, Romain Tavenard, Yann Soullard, Symposium International Francophone sur l’Ecrit et le Document (SIFED’2023), Juin 2023, Paris, France </a> </p>
             </div>
         </article>
         
-        <article class="projet">
-            <header>
-                <h2>Titre du projet</h2>
-            </header>
-            <div class="contenu">
-                <div class="image"><img src="assets/imgRef.jpg" alt="catcher plot">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cum neque, nobis at explicabo amet corporis unde eaque. Et, dolorum at dicta cum porro, reiciendis tenetur laboriosam molestias, reprehenderit quidem repellendus doloribus, numquam excepturi voluptatem delectus nulla temporibus facere voluptas?</p>
-                </div>
-                <h3>sous-titre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eligendi, asperiores aliquam voluptatibus eius provident minima facilis quidem accusantium tempora voluptate atque eum animi beatae possimus, facere tempore perspiciatis explicabo repellat quae eaque corporis magnam suscipit? Nisi sed atque iure obcaecati. Totam pariatur delectus a excepturi repellat veniam alias eius cupiditate ut neque laboriosam, odit dolores optio, autem voluptatem ab aliquid minus recusandae consectetur veritatis, ipsum doloribus culpa asperiores. Ducimus ipsum aliquid optio, maxime doloremque?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quasi hic laborum aliquid, necessitatibus voluptatibus est, tempora et. Voluptatem illum ea, fuga dolorem odio amet possimus at eveniet architecto in! Explicabo beatae eius ea, non dolores officia laboriosam a quis, corporis quae totam molestias autem!</p>
-            </div>
-        </article>
     </section>
 
 </body></html>
