@@ -13,7 +13,7 @@
     
     <link rel="stylesheet" href="css/style.css">
     <title>Bio &amp; Contact | Florent Imbert</title>
-	<link rel="shortcut icon" href="assets/IF.jpg" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/IF.svg" type="image/x-icon">
 	
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Page perso Florent Imbert" />
@@ -30,51 +30,38 @@
 <body>
     <header>
         <section>
-            <div class="">
-                <h1>Florent Imbert</h1>
-                <p>
-                    PhD student in Computer Science   <br />
-                    IRISA, Université de Rennes, INSA Rennes
-                </p>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <i class="fa fa-at fa-2x"></i>
-                            <p class="menu-text">Bio &amp; Contact</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="project.html">
-                            <i class="fa fa-flask fa-2x"></i>
-                            <p class="menu-text">Projects</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="publications.html">
-                            <i class="fa fa-book fa-2x"></i>
-                            <p class="menu-text">Publications</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="teaching.html">
-                            <i class="fa fa-graduation-cap fa-2x"></i>
-                            <p class="menu-text">Teaching</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav> 
+			    <nav class="navbar">
+					<img src="assets/IF.svg" alt="Logo" class="logo-image">
+					<div class="left-text ">Florent Imbert</div>
+					<ul class="menu">
+						<li><a href="index.html">Bio &amp; Contact</a></li>
+						<li><a href="project.html">Projects</a></li>
+						<li><a href="publications.html">Publications</a></li>
+						<li><a href="teaching.html">Teaching</a></li>
+					</ul>
+				</nav>
+		
         </section>
     </header>
+	<section class="Contact">
+			<article>
+			
+			<h1>Florent Imbert </h1>
+                <h3>
+                    PhD student in Computer Science   <br />
+                    IRISA, Université de Rennes, INSA Rennes
+                </h3>
+			<h2>Contact </h2>	
+            <p class="contact">
+                E-mail: <a class="obfuscated" onclick="var aaa='@'; var m='florent.imbert'+aaa+'irisa.fr';       this.innerHTML = m;       this.title = m;       this.href = 'mail'+'to:'+m;       this.onclick = null;       return false;       ">click to reveal</a> <br>
+                <i class="fa fa-github" style="font-size:24px"></i> <a href="https://github.com/FIorentI">FIorentI</a>, 
+				<i class="fa fa-linkedin" style="font-size:24px"></i> <a href="https://www.linkedin.com/in/florent-i-6740701a1/">Florent Imbert</a> <br />
+			</p>
+			</article>
+	</section>
+
     <section class="content">
         <article>
-            <h2>Contact</h2>
-            <p>
-                E-mail: <a class="obfuscated" onclick="var aaa='@'; var m='florent.imbert'+aaa+'irisa.fr';       this.innerHTML = m;       this.title = m;       this.href = 'mail'+'to:'+m;       this.onclick = null;       return false;       ">click to reveal</a>
-                [<i class="fa fa-github" style="font-size:24px"></i> <a href="https://github.com/FIorentI">FIorentI</a>, 
-				<i class="fa fa-linkedin" style="font-size:24px"></i> <a href="https://www.linkedin.com/in/florent-i-6740701a1/">Florent Imbert</a>] <br />
-			</p>
             <h2>Bio</h2>
             <p>
 			<div style="text-align:justify;">
@@ -106,5 +93,5 @@
 			</p>
         </article>
     </section>
-
+	
 </body></html>

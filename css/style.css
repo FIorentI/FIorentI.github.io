@@ -11,10 +11,18 @@ h2 {
 }
 
 body {
-    color: #535e78;
-    background-color: white/*#e5eef6*/;
+    color: #f8f8f2;
+    background-color: #282a36/*#e5eef6*/;
     font-family: 'Roboto', sans-serif; 
+	background-image: url("../assets/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.2);	
+	
 }
+ .bg-image {
+      opacity: 0.7;
+    }
 
 .contour {
     border: 1px solid red;
@@ -23,7 +31,7 @@ nav > ul > li > a{
     color:#eee;
 }
 a{
-    color:#1f0faf;
+    color:#0CD6F1;
 }
 a:link, a:visited {
     text-decoration: none
@@ -39,27 +47,31 @@ h1{
 h2{
     font-size: 2em;
     font-weight: 600;
-
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 p{
 	text-align:justify;
+	max-width: 1100px;
+	padding-left: 100px;
+	
 }
 .first{
     font-weight: bold;
 }
+.contact{
+	padding-left: 0px;
+}
 /*header*/
 
 body > header {
-    color: #eee;
-    margin: -35px 0 0 0;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    min-height: 120px;
-    background-color: #3c639a;
+    color: black;
+    
+    background-color: black;
 }
 
 header > section {
-    max-width: 740px;
+    /*max-width: 720px;*/
     margin: 0 auto;
 }
 
@@ -73,15 +85,15 @@ header > section > div {
 }
 
 header > section > div > h1 {
-    text-align: center;
+    text-align: left;
     font-size: 4em;
     font-weight: 900;
     display: block;
 }
 
 header > section > div > p {
-    min-width: 200px;
-    text-align: center;
+    /*min-width: 200px;*/
+    text-align: left;
 }
 
 @media only screen and (max-width: 780px){
@@ -92,7 +104,7 @@ header > section > div > p {
     margin: 20px 20px!important;
     }
     header > section > div { 
-        justify-content: center;
+        justify-content: left;
     }
 }
 /*navigation*/
@@ -111,12 +123,12 @@ nav > ul {
 nav > ul > li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 }
 nav > ul > li > a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 }
 nav > ul > li > a > i {
     margin: 0 auto;
@@ -130,26 +142,41 @@ nav > ul > li > a > i {
 /*main*/
 
 body > section {
-    max-width: 740px;
+    /*max-width: 720px;*/
     margin: 20px auto;
 }
 
 .content > article { 
-    background-color: #fff;
+    background-color: rgb(20, 22, 34);
     padding: 10px 20px;
     border-radius: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+    
+}
+
+.Contact   { 
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+	width:70%;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
     
 }
 
 article { 
-    background-color: #fff;
+    background-color: rgb(20, 22, 34);
     padding-bottom: 10px;
 }
 
 article > header{
-    background-color: #eee;
+    background-color: rgb(20, 22, 34);
     width: 100%;
-    max-width: 740px!important;
+    max-width: 720px!important;
     margin-bottom: 15px;
 }
 article > header > h2{
@@ -158,9 +185,13 @@ article > header > h2{
 div.image{
     display: flex;
     flex-wrap: nowrap;
+	background-color: #f8f8f2;
+	padding: 20px;
 }
 div.image > p {
     margin-left: 20px;
+
+	
 }
 div.image > img { 
     width: 400px;
@@ -171,6 +202,7 @@ div.image > img {
 div.image > contenu { 
     width: 400px;
     height: 100%;
+	background-color: #f8f8f2;
 }
 div.contenu{
     padding: 0 20px;
@@ -178,4 +210,61 @@ div.contenu{
 
 .projet{
     margin: 20px 0;
+}
+
+.container{
+    display:flex;
+}
+.content{
+ width:70%;
+}
+.me{
+  width:30%;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: black; /* Dark background color */
+    color: #fff; /* Light text color */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: start; /* Align items to the start of the container */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+/* Logo styles */
+.logo-image {
+    width: 50px; /* Adjust the width to match the desired size */
+    height: 50px; /* Adjust the height to match the desired size */
+    margin-right: 20px; /* Add spacing between logo and text */
+}
+
+/* Florent Imbert text styles */
+.navbar .left-text {
+    font-size: 2em; /* Set the font size */
+    font-weight: 600; /* Set the weight of the font */
+    flex-grow: 1; /* Allows the text to grow if needed */
+}
+
+/* Menu items styles */
+.navbar .menu {
+    list-style: none; /* Remove bullet points from the list */
+    display: flex; /* Display menu items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Individual menu item styles */
+.navbar .menu li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+/* Remove margin from the last menu item */
+.navbar .menu li:last-child {
+    margin-right: 0;
+}
+
+/* Hover effect for menu items */
+.navbar .menu li a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
