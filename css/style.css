@@ -187,6 +187,8 @@ div.image{
     flex-wrap: nowrap;
 	background-color: #f8f8f2;
 	padding: 20px;
+	width: 400px;
+	margin-left: 400px;
 }
 div.image > p {
     margin-left: 20px;
