@@ -270,3 +270,75 @@ div.contenu{
 .navbar .menu li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+/* Existing styles */
+/* Add your existing CSS here without modification */
+
+/* Responsive adjustments for phone-sized screens */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .content, .projet, .Contact, .container, .content, .me {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Simplify header layout */
+    header > section > div, .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .left-text {
+        font-size: 1.5em; /* Smaller font size for device */
+    }
+
+    .navbar .menu li {
+        margin: 5px 10px; /* Smaller spacing */
+    }
+
+    /* Adjusting navigation to be more vertical */
+    nav > ul {
+        flex-direction: column;
+    }
+    nav > ul > li {
+        text-align: center; /* Center align the links */
+    }
+    nav > ul > li > a > i {
+        margin: 0 auto; /* Center icons if any */
+    }
+
+    /* Hide elements or adjust for mobile */
+    div.image, article > header, .logo-image {
+        width: 100%; /* Adjust width */
+        margin: 0 auto; /* Centering */
+    }
+    div.image > img {
+        max-width: 100%; /* Make image responsive */
+        height: auto; /* Adjust height automatically */
+    }
+
+    /* Text adjustments for readability */
+    p, a, nav > ul > li > a, .navbar .menu li a {
+        font-size: smaller; /* Adjust font size for readability */
+    }
+	
+	p{
+	text-align:justify;
+	padding-left: 10px;
+	
+}
+
+    /* Adjusting content padding for smaller screens */
+    .content > article, .Contact {
+        padding: 10px; /* Reduce padding */
+    }
+
+    /* Make header more responsive */
+    header > section > div > h1, header > section > div > p {
+        font-size: smaller; /* Adjust font size for readability */
+    }
+
+    /* Additional customizations for phone mode */
+    /* Add any other adjustments you feel necessary for mobile viewing */
+}
